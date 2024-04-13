@@ -5,7 +5,7 @@ import Contact from './pages/Contact'
 import Navbar from '../src/components/Navbar'
 import About from './pages/About';
 import Projects from './pages/Projects';
-import Home1 from './pages/Home1';
+import Home from './pages/Home';
 import Blogs from './pages/Blogs';
 
 const App = () => {
@@ -13,7 +13,7 @@ const App = () => {
     <BrowserRouter>
       <Navbar />
       <Routes>
-        <Route path="/home" element={<Home1/>}></Route>
+        <Route path="/home" element={<Home/>}></Route>
         <Route path="/" element={<About/>}></Route>
         <Route path="/contact" element={<Contact/>}></Route>
         <Route path="/projects" element={<Projects/>}></Route>
