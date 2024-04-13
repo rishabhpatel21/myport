@@ -4,7 +4,7 @@ import name_logo from '../image/Rishabhname.png'
 import profile_logo from '../image/logo/Logo-web-R.jpg'
 
 const navigation = [
-  { name: 'Home', href: '/home1' },
+  { name: 'Home', href: '/home' },
   { name: 'About', href: '/' },
   { name: 'Projects', href: '/projects' },
   { name: 'Contact', href: '/contact'},
