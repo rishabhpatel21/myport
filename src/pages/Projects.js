@@ -35,7 +35,7 @@ const Projects = () => {
 
 <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20 font-SourceCode">
       <div className="flex flex-col mb-6 lg:justify-between lg:flex-row md:mb-8">
-        <h2 className="max-w-lg mb-5 font-sans text-3xl font-bold tracking-tight text-fuchsia-700 sm:text-4xl sm:leading-none md:mb-6 group">
+        <h2 className="max-w-lg mb-5 font-sans text-3xl font-bold tracking-tight text-fuchsia-800 sm:text-4xl sm:leading-none md:mb-6 group">
           <span className="inline-block mb-1 sm:mb-4 lg:animate-in lg:slide-in-from-left-80 lg:duration-1000 animate-in slide-in-from-right-72 duration-700">
             Projects
           </span>
@@ -45,42 +45,35 @@ const Projects = () => {
           Welcome to my project showcase, where innovation meets functionality in the digital realm. Explore web-based endeavors showcasing meticulous craftsmanship and technical prowess. Discover the boundless potential of digital solutions. 
         </p>
       </div>
-      <div className="grid gap-x-14  mb-4 lg:grid-cols-2 sm:row-gap-6 sm:grid-cols-2 ">
+      <div className="grid gap-x-8  mb-4 lg:grid-cols-2 sm:row-gap-6 sm:grid-cols-2 ">
       {details.map((item) => {
         return(
-        <a key={item.id} href="/" aria-label="View Item" className='mb-10 lg:animate-in lg:slide-in-from-bottom-96 lg:duration-1000 animate-in zoom-in-50 duration-1000'>
-          <div className="relative overflow-hidden transition duration-200 transform  shadow-lg  hover:-translate-y-2 hover:shadow-2xl border-emerald-300 border-4 rounded-lg ">
+        <a key={item.id} href="/" aria-label="View Item" className='mb-8 lg:animate-in lg:slide-in-from-bottom-96 lg:duration-1000 animate-in zoom-in-50 duration-1000'>
+          <div className="relative overflow-hidden transition duration-200 transform  shadow-md shadow-neutral-600 hover:shadow-neutral-700  hover:-translate-y-2 hover:shadow-lg  bg-slate-50 ">
             <img
-              className=" object-fill  w-full h-52 md:h-64 xl:h-72"
+              className=" object-fill p-3 md:p-5  w-full h-52 md:h-64 xl:h-72 "
               src={item.project_image}
               alt=""
             />
-            <div className="absolute inset-x-0 bottom-0 md:ml-2 md:mb-2  md:px-4 md:py-0 py-2 px-6  md:rounded-full bg-white md:bg-white md:w-fit bg-opacity-80 md:h-8 md:shadow-md md:shadow-neutral-900">
-              <p className="text-lg font-bold tracking-wide text-emerald-600 ">
+            <div className="flex items-center inset-x-0 bottom-0 md:ml-2 md:mb-2  md:px-4 md:py-0 pt-0 pb-2 px-6 md:h-8 ">
+              <p className="md:text-lg text-base font-bold tracking-wide text-yellow-600 ">
                 {item.project_name}
               </p>
+              <svg
+                              className=" ml-2 w-6 h-6 text-yellow-600 "
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                fill="currentColor"
+                                d="M21,12L14,5V9C7,10 4,15 3,20C5.5,16.5 9,14.9 14,14.9V19L21,12Z"
+                              />
+                            </svg>
             </div>
           </div>
         </a>
         )
       }
       )}
-      </div>
-      <div className="text-center">
-        <a
-          href="/projects"
-          aria-label=""
-          className=" inline-flex items-center font-semibold transition-colors  p-2 md:w-44 w-40 justify-center rounded-full md:rounded-lg shadow-sm shadow-neutral-800 hover:shadow-md hover:shadow-neutral-900 lg:duration-200 md:duration-300 duration-1000 "
-        >
-          <p>See more</p>
-          <svg
-            className="inline-block w-3 ml-2"
-            fill="currentColor"
-            viewBox="0 0 12 12"
-          >
-            <path d="M9.707,5.293l-5-5A1,1,0,0,0,3.293,1.707L7.586,6,3.293,10.293a1,1,0,1,0,1.414,1.414l5-5A1,1,0,0,0,9.707,5.293Z" />
-          </svg>
-        </a>
       </div>
     </div>
 

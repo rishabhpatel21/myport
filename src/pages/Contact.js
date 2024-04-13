@@ -9,7 +9,7 @@ const Contact = () => {
   const socials =[
     {
       id:'1',
-      href:'https://www.github.com/',
+      href:'https://github.com/rpatel-21',
       icon:<FaGithub />
     },
     {
@@ -24,7 +24,7 @@ const Contact = () => {
     },
     {
       id:'4',
-      href:'https://www.twitter.com/',
+      href:'https://twitter.com/rishabhpatel_21',
       icon:<FaSquareXTwitter />
     }
   ]
@@ -82,12 +82,12 @@ const Contact = () => {
                     
                     <button
                       type="button"
-                      class="px-6 py-2.5 mb-6  w-full  text-sm shadow-md bg-emerald-600 hover:bg-emerald-600 text-white font-bold shadow-neutral-700  rounded-lg transition md:duration-300 hover:shadow-lg hover:shadow-neutral-900 hover:rounded-lg lg:hover:animate-in lg:hover:-translate-y-1 "
+                      class="px-6 py-2.5 mb-6  w-full  text-sm shadow-md bg-emerald-500 text-white font-bold shadow-neutral-700  rounded-lg transition md:duration-300 hover:shadow-lg hover:shadow-neutral-900 hover:rounded-lg lg:hover:animate-in lg:hover:-translate-y-1 "
                     >
                       Forward to
                     </button>
                     <div class="text-center">
-                      <p class="mb-6 font-mono text-emerald-600">Social Media</p>
+                      <p class="mb-6 font-bold text-fuchsia-700">Social Media</p>
                     
                     <div class="flex justify-around">
                       {socials.map((item) => {
@@ -95,7 +95,7 @@ const Contact = () => {
                         <a
                         href={item.href}
                         role="button"
-                        class="text-emerald-600 hover:text-orange-600 focus:text-blue-700 action:text-blue-800 transition duration-200 ease-in-out"
+                        class="text-emerald-500  hover:-translate-y-1 focus:text-emerald-700 action:text-emerald-700 transition duration-200 ease-in-out"
                         
                       >
                         <span className="text-3xl">{item.icon}</span>
