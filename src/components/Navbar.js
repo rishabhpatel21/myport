@@ -4,7 +4,7 @@ import name_logo from '../image/Rishabhname.png'
 import profile_logo from '../image/logo/Logo-web-R.jpg'
 
 const navigation = [
-  { name: 'Home', href: '/home' },
+  // { name: 'Home', href: '/home' },
   { name: 'About', href: '/' },
   { name: 'Projects', href: '/projects' },
   { name: 'Contact', href: '/contact'},
@@ -44,12 +44,12 @@ export default function Example() {
                   /></a>
                 </div>
                 <div className=" hidden sm:ml-6 sm:block">
-                  <div className="bg-white  shadow-md shadow-neutral-900 px-8 py-2 rounded-full  flex space-x-4">
+                  <div className="bg-white  shadow-sm shadow-neutral-900 px-8 py-2 rounded-full  flex space-x-4">
                     {navigation.map((item) => (
                       <a
                         key={item.name}
                         href={item.href}
-                        className= {'hover:text-fuchsia-700 duration-200 font-bold text-base  text-neutral-800 filter drop-shadow-xl' }
+                        className= {'hover:text-fuchsia-700 duration-200  text-base  text-neutral-800 filter drop-shadow-xl' }
                       >
                         {item.name}
                       </a>
