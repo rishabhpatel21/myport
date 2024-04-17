@@ -72,7 +72,7 @@ const About = () => {
         <div>
           <div className='pb-10'>
             <p className='text-5xl font-bold pb-10'>Let's Get in Touch: Ways to Connect with Me</p>
-            <p className='text-base p-6'>Thank you for your interest in getting in touch with me. I welcome your feedback, questions, and suggestions. If you have a specific question or comment, please feel free to email me directly at danielshan.balico@gmail.com. I make an effort to respond to all messages within 24 hours, although it may take me longer during busy periods. Finally, if you prefer to connect on social media, you can connect with me using the social media links below.
+            <p className='text-base p-6'>Thank you for your interest in getting in touch with me. I welcome your feedback, questions, and suggestions. If you have a specific question or comment, please feel free to email me directly at rishabhpatel4489@gmail.com I make an effort to respond to all messages within 24 hours, although it may take me longer during busy periods. Finally, if you prefer to connect on social media, you can connect with me using the social media links below.
             
             </p>
             <div className="mb-10 ml-6 shadow-sm hover:shadow-lg hover:shadow-neutral-700 duration-300 shadow-neutral-700 w-52 rounded-lg">
