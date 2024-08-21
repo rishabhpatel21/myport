@@ -6,6 +6,29 @@ import { FaSquareXTwitter } from "react-icons/fa6";
 
 const Contact = () => {
 
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "1da499a0-02ac-4057-a2d3-da594a7b9628");
+
+    const object = Object.fromEntries(formData);
+    const json = JSON.stringify(object);
+
+    const res = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json"
+      },
+      body: json
+    }).then((res) => res.json());
+
+    if (res.success) {
+      console.log("Success", res);
+    }
+  };
+  
   const socials =[
     {
       id:'1',
@@ -52,7 +75,7 @@ const Contact = () => {
               </div>
               <div class="mb-4 lg:mb-0">
                 <div class="block rounded-lg shadow-xl shadow-neutral-500 bg-white px-6 py-8 md:px-12 animate-in lg:animate-in slide-in-from-bottom-80  lg:zoom-in-50   duration-1000 lg:duration-1000">
-                  <form>
+                  <form onSubmit={onSubmit}>
                     <div class="grid md:grid-cols-2 md:gap-6">
                       <div class="mb-6">
                         <input
@@ -75,13 +98,13 @@ const Contact = () => {
                       placeholder="Email address"
                     />
                     <textarea
-                      type="text"
+                      type="Message"
                       class="shadow-inner shadow-neutral-700 form-control block w-full h-24 px-3 py-1.5 mb-6 text-base font-normal text-gray-700  bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-fuchsia-700 focus:outline-none"
                       placeholder="Message"
                     />
                     
                     <button
-                      type="button"
+                      type="submit"
                       class="px-6 py-2.5 mb-6  w-full  text-sm shadow-md bg-emerald-500 text-white font-bold shadow-neutral-700  rounded-lg transition md:duration-300 hover:shadow-lg hover:shadow-neutral-900 hover:rounded-lg lg:hover:animate-in lg:hover:-translate-y-1 "
                     >
                       Forward to
