@@ -76,29 +76,21 @@ const Contact = () => {
               <div class="mb-4 lg:mb-0">
                 <div class="block rounded-lg shadow-xl shadow-neutral-500 bg-white px-6 py-8 md:px-12 animate-in lg:animate-in slide-in-from-bottom-80  lg:zoom-in-50   duration-1000 lg:duration-1000">
                   <form onSubmit={onSubmit}>
-                    <div class="grid md:grid-cols-2 md:gap-6">
-                      <div class="mb-6">
-                        <input
+                      <input
                           type="text"
-                          class="shadow-inner shadow-neutral-700 form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-fuchsia-700 focus:outline-none"
-                          placeholder="First name"
+                          name="name"
+                          class="shadow-inner shadow-neutral-700 form-control block w-full mb-6 px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-fuchsia-700 focus:outline-none"
+                          placeholder="Full name"
                         />
-                      </div>
-                      <div class="mb-6">
-                        <input
-                          type="text"
-                          class="shadow-inner shadow-neutral-700 form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-fuchsia-700 focus:outline-none"
-                          placeholder="Last name"
-                        />
-                      </div>
-                    </div>
                     <input
                       type="email"
+                      name="email"
                       class="shadow-inner shadow-neutral-700 form-control block w-full px-3 py-1.5 mb-6 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-fuchsia-700 focus:outline-none"
                       placeholder="Email address"
                     />
                     <textarea
-                      type="Message"
+                      type="message"
+                      name="message"
                       class="shadow-inner shadow-neutral-700 form-control block w-full h-24 px-3 py-1.5 mb-6 text-base font-normal text-gray-700  bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-fuchsia-700 focus:outline-none"
                       placeholder="Message"
                     />
