@@ -4,7 +4,7 @@ import { MdOutlineContacts } from "react-icons/md";
 import { MdOutlineReadMore } from "react-icons/md";
 import { FaHandPeace } from "react-icons/fa6";
 import { TypeAnimation } from 'react-type-animation';
-import resume from '../docs/Rishabh-Patel.pdf';
+import resume from '../docs/Resume-RishabhPatel.pdf';
 import Skillsandeducation from '../components/Skillsandeducation';
 import { FiGithub } from "react-icons/fi";
 
