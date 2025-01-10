@@ -1,6 +1,6 @@
 import { Disclosure} from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-import name_logo from '../image/Rishabhname.png'
+import name_logo from '../../public/image/Rishabhname.png'
 import profile_logo from '../image/logo/Logo-web-R.jpg'
 
 const navigation = [
