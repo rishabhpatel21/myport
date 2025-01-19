@@ -4,7 +4,7 @@ import { MdOutlineContacts } from "react-icons/md";
 import { MdOutlineReadMore } from "react-icons/md";
 import { FaHandPeace } from "react-icons/fa6";
 import { TypeAnimation } from 'react-type-animation';
-import resume from 'https://drive.google.com/file/d/1-YpTBf2aH6-3vFGFF_c6LqBOL71AWgjQ/view?usp=drive_link';
+import resume from '';
 import Skillsandeducation from '../components/Skillsandeducation';
 import { FiGithub } from "react-icons/fi";
 
